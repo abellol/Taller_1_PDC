@@ -43,7 +43,7 @@ num3 : float
 num1 = float(input("Por favor ingrese el primer numero: "))
 num2 = float(input("Por favor ingrese el segundo numero: "))
 num3 = float(input("Por favor ingrese el tercer numero: "))
-#se comparan lso numeros mediante condicionales y operadores
+#se comparan los numeros mediante condicionales y operadores
 if num1 > num2 and num1 > num3:
     print(num1, ", siendo el primer numero ingresado, es el mayor entre los demas")
 elif num2 > num1 and num2 > num3:
