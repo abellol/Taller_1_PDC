@@ -169,7 +169,7 @@ M --> N
 N --> Z
 J --> Z
 ```
-## Bonus
+# Bonus
 <details><summary>SORPRESAS</summary><p>
 <div align='center'>
   <p>¡El primer video de los fenomenoides!</p>
