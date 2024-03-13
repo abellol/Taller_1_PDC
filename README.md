@@ -3,22 +3,30 @@
 | Nombre | ID |
 |---|---|
 | Alejandro Bello | 1013037759 |
-| Malcolm Carrillo | 789012 |
-| Rafael Chirivi | 345678 |
+| Malcolm Carrillo | 1010962608 |
+| Rafael Chirivi | 1034661580 |
 
 <details><summary>Preparense para ver el grandioso logo: </summary><p>
 <div align='center'>
 <figure> <img src="https://i.postimg.cc/NFbwf57S/logo-def.png" alt="Defensa Civil" width="400" height="auto"/></br>
 <figcaption><b> "Somos programadores, no diseñadores" </b></figcaption></figure>
 </div>
+    <details><summary>Si tienes algo en contra del logo lee esto: </summary><p>
+<div align='center'>
+<figure> <img src="https://i.postimg.cc/PrQMNhrs/comedia.jpg" alt="comedia" width="400" height="auto"/></br>
+<figcaption><b> esta imagen nos define realmente... </b></figcaption></figure>
+</div>
+</p></details><br>
 </p></details><br>
 
-## Acá se muestran los resultados de los quizes de python (numeral 1):
+## Acá se muestran los resultados de los quizes de python (totalmente legítimo todo):
 ### Alejandro:
 [![quiz-ppaiton.jpg](https://i.postimg.cc/VkwDFmMZ/quiz-ppaiton.jpg)](https://postimg.cc/8jyRp8ZL)
-### Malcolm: 
+
+### Malcolm:
 
 ### Rafael: 
+[![Imagen-de-Whats-App-2024-03-13-a-las-09-56-05-65d42c91.jpg](https://i.postimg.cc/Z5S9Xyr6/Imagen-de-Whats-App-2024-03-13-a-las-09-56-05-65d42c91.jpg)](https://postimg.cc/gngkZjt0)
 
 ## Los ejercicios impares (3, 5, 7, 9) están en el archivo taller_1.ipynb al inicio del repo
 ## Los ejercicios pares (2, 4, 6, 8, 10) estan a continuación:
@@ -102,6 +110,42 @@ frecuencia = float(input("Ingrese la frecuencia (Hz) de la onda que desea consul
 f_onda = espectro(frecuencia)
 print("la frecuencia", frecuencia, "pertence al espectro electromagnetico de:", f_onda)
 ```
+#### Por el digito 8 de Malcolm adjuntamos el diagrama de flujo de este algoritmo:
+ ```mermaid
+flowchart TD
+A(Inicio)
+B[ingrese un numero f] 
+C{f < 3}
+D[espectro electromagnetico de ondas de radio]
+E{f < 300e9}
+F[espectro electromagnetico de microondas]
+G{f < 400e12}
+H[espectro electromagnetico de infrarrojo]
+I{f < 750e12}
+J[espectro electromagnetico de luz visible]
+K{f < 30e15}
+L[espectro electromagnetico de ultravioleta]
+M{f < 30e18}
+N[espectro electromagnetico de rayos x]
+P[espectro electromagnetico de rayos gamma]
+Q(FIN)
+A --> B
+B --> C
+C -->|NO| E
+E --> |NO|G
+G -->|NO|I
+I -->|NO|K
+K -->|NO|M
+C -->|SI|D
+E -->|SI|F
+G -->|SI|H
+I -->|SI|J
+K -->|SI|L
+M -->|SI|N --> Q
+M -->|NO|P --> Q
+   ```
+
+
 #### Ejercicio 10
 ```python
 # Escriba un programa que dada una distancia calcule:
@@ -127,8 +171,9 @@ if __name__ == "__main__":
     auto= print("al Koenigsegg Jesko Absolut le tomaría:", distancia/VEL_CHIRON, "s")
 ```
 #### Además, por el digito 0 de la TI de Rafa, adjuntamos el diagrama de flujo de este ejercicio:
+   
 ```mermaid
-flowchart TD
+ flowchart TD
 A(inicio)
 B[c = 3 * 10^8 m/s]
 C[vel_sonido = 343 m/s]
@@ -167,13 +212,28 @@ K --> L
 L --> M
 M --> N
 N --> Z
-J --> Z
-```
+  ```
 # Bonus
-<details><summary>SORPRESAS</summary><p>
-<div align='center'>
-  <p>¡El primer video de los fenomenoides!</p>
+<details><summary>¡SORPRESA!</summary><p>
+<div align='left'>
+  <p>Si queremos puntos extra...</p>
   <p> <a href="https://www.youtube.com/watch?v=EhBrKKHbNR0&t=64s">Enlace al video de YouTube</a>
   </p>
 </div>
 </p></details><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
