@@ -28,18 +28,21 @@
 ### Rafael: 
 [![Imagen-de-Whats-App-2024-03-13-a-las-09-56-05-65d42c91.jpg](https://i.postimg.cc/Z5S9Xyr6/Imagen-de-Whats-App-2024-03-13-a-las-09-56-05-65d42c91.jpg)](https://postimg.cc/gngkZjt0)
 
-## Los ejercicios impares (3, 5, 7, 9) están en el archivo taller_1.ipynb al inicio del repo
+## Los ejercicios impares (3, 5, 7, 9) están en el archivo taller_1.ipynb al inicio del repo, allí tiene sus respectivos comentarios.
+
 ## Los ejercicios pares (2, 4, 6, 8, 10) estan a continuación:
 #### Ejercicio 2
 ```python
 # 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
-
+#Se declaran las variables
 num1 : float
 num2 : float
 num3 : float
+# se ingresan 3 numeros reales
 num1 = float(input("Por favor ingrese el primer numero: "))
 num2 = float(input("Por favor ingrese el segundo numero: "))
 num3 = float(input("Por favor ingrese el tercer numero: "))
+#se comparan lso numeros mediante condicionales y operadores
 if num1 > num2 and num1 > num3:
     print(num1, ", siendo el primer numero ingresado, es el mayor entre los demas")
 elif num2 > num1 and num2 > num3:
@@ -53,12 +56,16 @@ else:
 #### Ejercicio 4
 ```python
 # 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
-
-um1 : float
+#se declaran las variables
+num1 : float
 num2 : float
+multiplo : float
+
+#se ingresan los dos numeros reales a comparar
+
 num1 = float(input("Por favor ingrese el primer numero: "))
 num2 = float(input("Por favor ingrese el segundo numero: "))
-multiplo : float
+#se evalúa mediante operadores y condicionales
 multiplo = num2%num1
 if multiplo == 0:
     print("El primer numero ingresado " ,num1, " es multiplo del segundo numero ingresado " ,num2)
@@ -68,14 +75,15 @@ else:
 #### Ejercicio 6
 ```python
 # 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
-
+#Se declaran las variables
 letra : str
+# se pide un caracter (1)
 letra = str(input("Por favor ingrese una letra para ser evaluada"))
-if len(letra) ==1:
-    if ord(letra) >= 65 and ord(letra) <= 90:
+if len(letra) ==1: 
+    if ord(letra) >= 65 and ord(letra) <= 90: #es evaluado mediante la función ord, que convierte de ASCII a numero
         if ord(letra) == 65 or ord(letra) == 69 or ord(letra) == 73 or ord(letra) == 79 or ord(letra) == 85:
             print("La letra ingresada corresponde a una vocal mayuscula")
-        else:
+        else: # mediante condicionales evalua si cumple las propiedades pedidas por el enunciado
             print("La letra ingresada corresponde a una consonante mayuscula")
     elif ord(letra) >= 97 and ord(letra) <= 122: 
         if ord(letra) == 97 or ord(letra) == 101 or ord(letra) == 105 or ord(letra) == 111 or ord(letra) == 117:
@@ -89,7 +97,7 @@ else:
 ```python
 # Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
 
-def espectro(frecuencia: float):
+def espectro(frecuencia: float): #definimos la funcion "espectro", donde simplemente compara el valor "frecuencia" de una onda en Hz
   if frecuencia < 3:
     return "Ondas de radio"
   elif frecuencia < 300e9:
@@ -98,17 +106,18 @@ def espectro(frecuencia: float):
     return "Infrarrojo"
   elif frecuencia < 750e12:
     return "Luz visible"
-  elif frecuencia < 30e15:
+  elif frecuencia < 30e15: #segun el valor, regresa un rango al cual pertenece
     return "Ultravioleta"
   elif frecuencia < 30e18:
     return "Rayos X"
   else:
     return "Rayos gamma"
 
-frecuencia = float(input("Ingrese la frecuencia (Hz) de la onda que desea consultar:  ")) 
+if __name__ == "__main__":
+    frecuencia = float(input("Ingrese la frecuencia (Hz) de la onda que desea consultar:  ")) #acá se solicita al usuario ingresar el valor de la onda en Hz
 
-f_onda = espectro(frecuencia)
-print("la frecuencia", frecuencia, "pertence al espectro electromagnetico de:", f_onda)
+    f_onda = espectro(frecuencia)
+    print("la frecuencia", frecuencia, "pertence al espectro electromagnetico de:", f_onda) #luego de evaluar la funcion según el valor daodo, retorna el rango al cual pertenece
 ```
 #### Por el digito 8 de Malcolm adjuntamos el diagrama de flujo de este algoritmo:
  ```mermaid
@@ -144,7 +153,124 @@ K -->|SI|L
 M -->|SI|N --> Q
 M -->|NO|P --> Q
    ```
+#### Ejercicio 9 
+##### ya sabemos que es impar pero debemos explicar el diagrama de flujo por el 9 en la TI de Alejandro
+```python
+minusc: bool = False #se declaracon un valor booleano para evaluar si es o no minuscula la entrada
+def obt_capital (pais:str)->str: #se define la función que contiene todos los paises de merica y sus capitales
+    match pais: #todos son evaluados por un match-case
+        case "estados unidos":
+            return "Washington DC"
+        case "colombia":
+            return "Bogotá"
+        case "argentina":
+            return "Buenos Aires"
+        case "canada":
+            return "Otawwa"
+        case "mexico":
+            return "México DF"
+        case "belice":
+            return "Belmopán"
+        case "costa rica":
+            return "San José"
+        case "el salvador":
+            return "San Salvador"
+        case "guatemala":
+            return "Ciudad de Guatemala"
+        case "honduras":
+            return "Tegucigalpa"
+        case "nicaragua":
+            return "Managua"
+        case "panama":
+            return "Panamá"
+        case "argentina":
+            return "Buenos Aires"
+        case "bolivia":
+            return "Sucre"
+        case "brasil":
+            return "Brasilia"
+        case "chile":
+            return "Santiago de Chile"
+        case "ecuador":
+            return "Quito"
+        case "paraguay":
+            return "Asunción"
+        case "peru":
+            return "Lima"
+        case "surinam":
+            return "Parabimo"
+        case "trinidad y tobago":
+            return "Puerto España"
+        case "uruguay":
+            return "Montevideo"
+        case "venezuela":
+            return "Caracas"
+        case "antigua y barbuda":
+            return "Saint John"
+        case "bahamas":
+            return "Nasáu"
+        case "barbados":
+            return "Bridgetown"
+        case "cuba":
+            return "La Habana"
+        case "dominica":
+            return "Roseau"
+        case "granada":
+            return "Saint George"
+        case "haiti":
+            return "Puerto Principe"
+        case "guyana":
+            return "Georgetown"
+        case "jamaica":
+            return "Kingston"
+        case "republica dominicana":
+            return "Santo Domingo"
+        case "san cristobal y nieves":
+            return "Basseterre"
+        case "san vicente y las granadinas":
+            return "Kingstown"
+        case "santa lucia":
+            return "Castries"
+        case "puerto rico":
+            return "San Juan"
+        case "guyana francesa":
+            return "Cayena"
+        case "groelandia":
+            return "Nuuk"
+        case "alaska":
+            return "Juenau"
+        case _:
+            return 0
+        
+if __name__ == "__main__":
+    while minusc == False: #usamos un loop para comprobar que sea minuscula e imprima los resultados correspondientes
+      pais = str(input("Ingrese un país de América (ingresar todo en minúscula): ")) #se ingresa el pais que se quiere consultar
 
+      if pais.isupper()== True: #usamos la funcion isupper para evaluar si es mayuscula
+          print("El nombre del país se debe escribir en minúsculas, intente de nuevo") #imrime el "error" en caso de ingresar mayusculas
+      else:
+          minusc = True
+    capital=obt_capital(pais) #se usa la funcion para hallar la capital, ya que cumple las condiciones de sintaxis (solo minusculas)
+    if capital == 0:
+        print("Elija un pais válido")
+    else:
+        print("La capital de "+pais.title()+" es "+capital)
+```
+#### Diagrama de flujo
+```mermaid
+flowchart TD
+    A([Capital de un país de América]) -->|Inicio| B[/Leer país/]
+    B --> C{¿Está en minuscula?}
+    C -->|Si| D[(Paises de América: Capitales)]
+    C -->|No| E[/"Imprimir ''El nombre del país se debe escribir en minúsculas, intente de nuevo''"/]
+    E --> B
+    D -->F{¿Es un país de América?}
+    F--> |Si| G[Obtener capital de pais] 
+    G-->H[/"Imprimir ''La capital de '' pais ''es''capital"/]
+    F --> |No| I[/Imprimir ''País no valido''/]
+    H -->Z([Fin])
+    I --> Z
+```
 
 #### Ejercicio 10
 ```python
