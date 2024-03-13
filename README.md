@@ -204,13 +204,14 @@ C --> D
 D --> E
 E --> F
 F --> G
-F --> H
-F --> I
-F --> J 
-G --> K--> Z
-H --> L--> Z
-I --> M--> Z
-J --> N --> Z
+G --> H
+H --> I
+I --> J 
+J --> K
+K --> L
+L --> M
+M --> N
+N --> Z
   ```
 # Bonus
 <details><summary>¡SORPRESA!</summary><p>
