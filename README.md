@@ -24,6 +24,7 @@
 [![quiz-ppaiton.jpg](https://i.postimg.cc/VkwDFmMZ/quiz-ppaiton.jpg)](https://postimg.cc/8jyRp8ZL)
 
 ### Malcolm:
+[![malom.jpg](https://i.postimg.cc/NF66qSxB/malom.jpg)](https://postimg.cc/p5dhK076)
 
 ### Rafael: 
 [![Imagen-de-Whats-App-2024-03-13-a-las-09-56-05-65d42c91.jpg](https://i.postimg.cc/Z5S9Xyr6/Imagen-de-Whats-App-2024-03-13-a-las-09-56-05-65d42c91.jpg)](https://postimg.cc/gngkZjt0)
