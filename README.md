@@ -173,7 +173,7 @@ if __name__ == "__main__":
 #### Además, por el digito 0 de la TI de Rafa, adjuntamos el diagrama de flujo de este ejercicio:
    
 ```mermaid
- flowchart TD
+flowchart TD
 A(inicio)
 B[c = 3 * 10^8 m/s]
 C[vel_sonido = 343 m/s]
@@ -204,14 +204,13 @@ C --> D
 D --> E
 E --> F
 F --> G
-G --> H
-H --> I
-I --> J 
-J --> K
-K --> L
-L --> M
-M --> N
-N --> Z
+F --> H
+F --> I
+F --> J 
+G --> K--> Z
+H --> L--> Z
+I --> M--> Z
+J --> N --> Z
   ```
 # Bonus
 <details><summary>¡SORPRESA!</summary><p>
